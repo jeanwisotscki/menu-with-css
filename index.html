@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Hamburguer</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header id="header">
+      <div>
+        <span id="logo">
+          <a href="#">Logo</a>
+        </span>
+      </div>
+
+      <nav id="nav">
+        <button
+          id="btn-mobile"
+          data-menu="button"
+          aria-label="Abrir menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <!--Botão do menu hamburguer-->
+          <span id="hamburguer"></span>
+        </button>
+        <ul data-menu="list" id="menu" role="menu">
+          <li data-dropdown>
+            <a href="#">Item 1</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown item 1</a></li>
+              <li><a href="#">Dropdown item 2</a></li>
+              <li><a href="#">Dropdown item 3</a></li>
+              <li><a href="#">Dropdown item 4</a></li>
+            </ul>
+          </li>
+          <li data-dropdown>
+            <a href="#">Item 2</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Dropdown item 1</a></li>
+              <li><a href="#">Dropdown item 2</a></li>
+              <li><a href="#">Dropdown item 3</a></li>
+              <li><a href="#">Dropdown item 4</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Item 3</a>
+          </li>
+          <li>
+            <a href="#">Item 4</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
