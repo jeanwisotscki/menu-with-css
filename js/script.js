@@ -1,5 +1,5 @@
-import MenuMobile from "./menuMobile.js";
-import DropdownMenu from "./dropdownMenu.js";
+import MenuMobile from "./modules/menuMobile.js";
+import DropdownMenu from "./modules/dropdownMenu.js";
 
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
